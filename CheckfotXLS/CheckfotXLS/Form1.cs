@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Porgrammer: Gerry Huang 2020/05/20
+
 namespace CheckfotXLS
 {
     public partial class Form1 : Form
@@ -21,7 +23,7 @@ namespace CheckfotXLS
         private void read_xls1()
         {
             OpenFileDialog fd = new OpenFileDialog();
-            fd.Filter = "All files (*.*)|*.*";
+            fd.Filter = "Excel Files(*.xls)|*.xls";
             string strPath;
             if (fd.ShowDialog() == DialogResult.OK)
             {
@@ -48,7 +50,7 @@ namespace CheckfotXLS
         private void read_xls2()
         {
             OpenFileDialog fd = new OpenFileDialog();
-            fd.Filter = "All files (*.*)|*.*";
+            fd.Filter = "Excel Files(*.xls)|*.xls";
             string strPath;
             if (fd.ShowDialog() == DialogResult.OK)
             {
@@ -113,8 +115,8 @@ namespace CheckfotXLS
                             else
                                 FAIL++;
                         }
-                        label1.Text = "匹配：" + OK.ToString();
-                        label2.Text = "不匹配" + FAIL.ToString();
+                        label1.Text = "Maching：" + OK.ToString();
+                        label2.Text = "  Error:" + FAIL.ToString();
                     }
                 }
             }
