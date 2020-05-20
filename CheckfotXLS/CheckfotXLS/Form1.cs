@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace CheckfotXLS
 {
-    public partial class Form1 : Form
+    public partial class ExcelMatch : Form
     {
-        public Form1()
+        public ExcelMatch()
         {
             InitializeComponent();
         }
@@ -69,7 +69,7 @@ namespace CheckfotXLS
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error:" + ex.Message);
                 }
             }
         }
@@ -98,31 +98,35 @@ namespace CheckfotXLS
         {
             int row1 = dataGridView1.Rows.Count;
             int row2 = dataGridView2.Rows.Count;
+            int a1 = int.Parse(textBox1.Text.ToString());
+            int a2 = int.Parse(textBox2.Text.ToString());
+            int b1 = int.Parse(textBox3.Text.ToString());
+            int b2 = int.Parse(textBox4.Text.ToString());
             int OK = 0;
             int FAIL = 0;
             try
             {
                 for (int i = 0; i < row1-1; i++)
                 {
-                    String FindTXT = dataGridView1.Rows[i].Cells[0].Value.ToString();
-                    String FindData = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                    String FindTXT = dataGridView1.Rows[i].Cells[a1-1].Value.ToString();
+                    String FindData = dataGridView1.Rows[i].Cells[a2-1].Value.ToString();
                     for (int j = 0; j < row2-1; j++)
                     {
-                        if (FindTXT == dataGridView2.Rows[j].Cells[0].Value.ToString())
+                        if (FindTXT == dataGridView2.Rows[j].Cells[b1-1].Value.ToString())
                         {
-                            if (FindData == dataGridView2.Rows[j].Cells[1].Value.ToString())
+                            if (FindData == dataGridView2.Rows[j].Cells[b2-1].Value.ToString())
                                 OK++;
                             else
                                 FAIL++;
                         }
-                        label1.Text = "Maching：" + OK.ToString();
-                        label2.Text = "  Error:" + FAIL.ToString();
+                        label1.Text = "Matching：" + OK.ToString();
+                        label2.Text = "Error:" + FAIL.ToString();
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show("Error:"+ex.Message);
             }
         }
     }

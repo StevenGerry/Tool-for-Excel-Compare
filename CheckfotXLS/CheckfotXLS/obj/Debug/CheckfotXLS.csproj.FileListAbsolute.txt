@@ -2,9 +2,9 @@ C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\bin\Debug\CheckfotXLS.exe
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\bin\Debug\CheckfotXLS.exe
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\bin\Debug\CheckfotXLS.pdb
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.csprojAssemblyReference.cache
-C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.Form1.resources
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.Properties.Resources.resources
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.csproj.GenerateResource.cache
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.csproj.CoreCompileInputs.cache
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.exe
 C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.pdb
+C:\Users\gerhua01\source\repos\CheckfotXLS\CheckfotXLS\obj\Debug\CheckfotXLS.ExcelMatch.resources
